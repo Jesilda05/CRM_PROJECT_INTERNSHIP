@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    min-height: 100vh;
+    background: linear-gradient(to right, #f9e5e4, #fbd8d8); 
+}
+
+
+.sidebar {
+    width: 250px; 
+    background-color: #f8c6c4; 
+    padding: 1rem;
+    box-shadow: 2px 0 4px rgba(112, 156, 232, 0.1);
+    overflow-y: auto;
+    border-right: 2px solid #f9a4a3; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    display: block;
+    color: #003366; 
+    background-color: #f8c6c4; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    border: 2px solid #f9a4a3; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f9a4a3; 
+    border-color: #f8c6c4; 
+}
+
+
+main {
+    margin-left: 250px; 
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(225, 146, 209, 0.1);
+    flex: 1;
+    overflow-y: auto;
+    min-height: 100vh;
+    border-left: 2px solid #f9a4a3; }
+
+.dashboard {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #f9a4a3;
+    padding-bottom: 0.5rem;
+}
+
+.dashboard-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dashboard-stat-card {
+    background-color: #f8c6c4; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #f9a4a3; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 1rem); 
+    min-width: 250px; 
+}
+
+.dashboard-stat-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.dashboard-stat-card p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333; 
+}
+
+.recent-sales {
+    margin-top: 2rem;
+}
+
+.recent-sales h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #f9a4a3;
+}
+
+.recent-sales table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-sales th, .recent-sales td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-sales th {
+    background-color: #f8c6c4; 
+    color: #333;
+}
+
+.recent-sales tr:nth-child(even) {
+    background-color: #f9e5e4; 
+}
